@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Marine Conservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Get Involved in Marine Conservation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="ecosystems.html">Ecosystems</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="climate-change.html">Climate Change</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-form">
+            <h2>Register for Activities</h2>
+            <form action="submit_registration.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="activity">Select Activity:</label>
+                <select id="activity" name="activity" required>
+                    <option value="beach-cleanup">Beach Clean-Up</option>
+                    <option value="workshop">Educational Workshop</option>
+                    <option value="volunteer">Volunteer for Research</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="upcoming-programs">
+            <h2>Upcoming Programs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Register</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beach Clean-Up</td>
+                        <td>March 15, 2023</td>
+                        <td>10:00 AM - 1:00 PM</td>
+                        <td>Ocean Park Beach</td>
+                        <td><a href="register.html">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Marine Conservation Workshop</td>
+                        <td>March 22, 2023</td>
+                        <td>2:00 PM - 4:00 PM</td>
+                        <td>Community Center</td>
+                        <td><a href="register.html">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Volunteer Research Day</td>
+                        <td>April 5, 2023</td>
+                        <td>9:00 AM - 3:00 PM</td>
+                        <td>Marine Research Lab</td>
+                        <td><a href="register.html">Book Now</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a demonstration website developed as an educational exercise. It incorporates text and media from Wikipedia under the Creative Commons license.</p>
+    </footer>
+</body>
+</html>
